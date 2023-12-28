@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Widget Test</title>
+    <script src="widget.min.js"></script>
+</head>
+<body>
+    <div id="invite"></div>
+    <script>
+        const container = document.querySelector('#invite')
+        const widget = new DiscordWidget(
+            'stardewvalley',
+            container
+        )
+
+        widget.create()
+    </script>
+</body>
+</html>

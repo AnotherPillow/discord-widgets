@@ -1,0 +1,21 @@
+{
+    "name": "discord-widgets",
+    "version": "1.0.0",
+    "description": "",
+    "main": "widget.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "_build": "uglifyjs widget.js --comments all -c -m --mangle-props reserved=['DiscordWidget','create','delete'] > widget.min.js",
+        "build": "node minify.js",
+        "dev": "npx serve -l 3422"
+    },
+    "keywords": [],
+    "author": "AnotherPillow",
+    "license": "MIT",
+    "devDependencies": {
+        "uglify-js": "^3.17.4"
+    },
+    "dependencies": {
+        "@babel/core": "^7.23.6"
+    }
+}
