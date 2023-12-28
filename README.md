@@ -19,3 +19,8 @@ widget.create()
 ```
 
 An example can be found in [test.html](./test.html)
+
+
+## Appearance
+
+![image](https://github.com/AnotherPillow/discord-widgets/assets/85362273/63cde4b6-23d5-458e-a2af-c611291f4d0f)
