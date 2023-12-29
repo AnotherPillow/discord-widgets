@@ -26,6 +26,7 @@
             background-position-y: -140px;
             grid-template-rows: 33% 67%;
             grid-template-columns: 100%;
+            text-align: left;
         }
         
         #child1, #child2 {
