@@ -43,6 +43,14 @@
             display: flex;
             flex-flow: row wrap;
             gap: 16px;
+            position: relative;
+        }
+        #child2 #invite-notification {
+            margin: 0;
+            position: absolute;
+            left: calc(1.2em + 2px);
+            top: 0.5em;
+            color: gray;
         }
         #child2 #server-info {
             display: flex;
@@ -73,7 +81,7 @@
             color: white;
         }
         #child2 #server-info #server-details h3 {
-            margin-top: 0;
+            margin: 0;
         }
         #child2 #server-info #server-members #member-counts-outer-parent {
             display: flex;
@@ -118,6 +126,7 @@
         #child2 #join-btn:hover {
             filter: brightness(0.8);
         }
+        
     `
     const html = `
     <div id="invite-container">
@@ -125,11 +134,12 @@
     
     </div>
     <div id="child2"> 
+      <h3 id="invite-notification">You've been invited to join a server</h3>
       <div id="server-info"> 
         <div id="server-icon"></div>
         <div id="server-details"> 
           <h3 id="server-name">Loading...</h3>
-          <strong id="server-members">
+          <span id="server-members">
             <div id="member-counts-outer-parent">
               <div id="online-members" class="member-count">
                 <span class="circle circle-online">&nbsp;</span>
@@ -141,7 +151,7 @@
                 <span id="total-members-text" />
               </div>
             </div>
-          </strong>
+          </span>
         </div>
       </div>
       <div id="join-link-container">
@@ -161,6 +171,13 @@
         style.innerHTML = css
         document.head.appendChild(style)
     })
+    /**
+     * 
+     * @param {number | string} str 
+     * @returns {string} str, with commas inserted
+     * @author https://stackoverflow.com/a/2901298
+     */
+    const insertCommas = (str) => str.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     class DiscordWidget {
         /**
@@ -193,9 +210,9 @@
             iconElement.style.backgroundImage = `url('${iconURL}')`
             
             const memberCount = data.approximate_member_count;
-            totalMembersText.innerHTML = `${memberCount} Members`
+            totalMembersText.innerHTML = `${insertCommas(memberCount)} Members`
             const onlineCount = data.approximate_presence_count;
-            onlineMembersText.innerHTML = `${onlineCount} Online`
+            onlineMembersText.innerHTML = `${insertCommas(onlineCount)} Online`
             const invite = data.code
             inviteElement.href = `https://discord.gg/${invite}`
             
