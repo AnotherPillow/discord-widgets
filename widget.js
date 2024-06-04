@@ -135,7 +135,7 @@
         
         </div>
         <div id="dsc-widget-child2"> 
-            <h3 id="idsc-widget-nvite-notification">You've been invited to join a server</h3>
+            <h3 id="dsc-widget-invite-notification">You've been invited to join a server</h3>
             <div id="dsc-widget-server-info"> 
                 <div id="dsc-widget-server-icon"></div>
                 <div id="dsc-widget-server-details"> 
