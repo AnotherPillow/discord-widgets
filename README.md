@@ -12,7 +12,8 @@ Then add this to a `<script>` tag somewhere *after* the import:
 const container = document.querySelector('#invite')
 const widget = new DiscordWidget(
     '[SOME INVITE]', // String
-    container // HTMLElement
+    container, // HTMLElement
+    '/icon_discord.png' // String - **OPTIONAL** alt URL for image.
 )
 
 widget.create()
