@@ -7,10 +7,10 @@
             margin: 0.3em;
             border-radius: 50%;
         }
-        .dsc-widget-circle.circle-online {
+        .dsc-widget-circle.dsc-widget-circle-online {
             background-color: #23A559;
         }
-        .dsc-widget-circle.circle-members {
+        .dsc-widget-circle.dsc-widget-circle-members {
             background-color: #80848E;
         }
         
@@ -29,7 +29,7 @@
             text-align: left;
         }
         
-        #dsc-widget-child1, #child2 {
+        #dsc-widget-child1, #dsc-widget-child2 {
             width: 100%;
             height: 100%;
         }
@@ -46,7 +46,7 @@
             gap: 16px;
             position: relative;
         }
-        #dsc-widget-child2 #idsc-widget-nvite-notification {
+        #dsc-widget-child2 #dsc-widget-invite-notification {
             margin: 0;
             position: absolute;
             left: calc(1.2em + 2px);
@@ -61,7 +61,7 @@
             gap: 16px;
             margin-left: 1em;
         }
-        #dsc-widget-child2 #server-info #dsc-widget-server-icon {
+        #dsc-widget-child2 #dsc-widget-server-info #dsc-widget-server-icon {
             flex: 0 0 auto;
             width: 5em;
             height: 5em;
@@ -97,7 +97,7 @@
             flex-flow: nowrap;
             min-width: 0;
         }
-        #dsc-widget-child2 #dsc-widget-server-info #dsc-widget-server-members #mdsc-widget-ember-counts-outer-parent .dsc-widget-member-count span {
+        #dsc-widget-child2 #dsc-widget-server-info #dsc-widget-server-members #dsc-widget-member-counts-outer-parent .dsc-widget-member-count span {
             flex: 0 1 auto;
         }
         #dsc-widget-child2 #dsc-widget-join-link-container {
