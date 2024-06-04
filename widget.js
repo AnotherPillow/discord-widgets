@@ -139,20 +139,20 @@
             <div id="dsc-widget-server-info"> 
                 <div id="dsc-widget-server-icon"></div>
                 <div id="dsc-widget-server-details"> 
-                <h3 id="dsc-widget-server-name">Loading...</h3>
-                <span id="dsc-widget-server-members">
-                    <div id="dsc-widget-member-counts-outer-parent">
-                    <div id="dsc-widget-online-members" class="member-count">
-                        <span class="dsc-widget-circle dsc-widget-circle-online">&nbsp;</span>
-                        <span id="dsc-widget-online-members-text" />
-                    </div>
-                    
-                    <div id="dsc-widget-total-members" class="dsc-widget-member-count">
-                        <span class="dsc-widget-circle dsc-widget-circle-members">&nbsp;</span>
-                        <span id="dsc-widget-total-members-text" />
-                    </div>
-                    </div>
-                </span>
+                    <h3 id="dsc-widget-server-name">Loading...</h3>
+                    <span id="dsc-widget-server-members">
+                        <div id="dsc-widget-member-counts-outer-parent">
+                            <div id="dsc-widget-online-members" class="member-count">
+                                <span class="dsc-widget-circle dsc-widget-circle-online">&nbsp;</span>
+                                <span id="dsc-widget-online-members-text" />
+                            </div>
+                            
+                            <div id="dsc-widget-total-members" class="dsc-widget-member-count">
+                                <span class="dsc-widget-circle dsc-widget-circle-members">&nbsp;</span>
+                                <span id="dsc-widget-total-members-text" />
+                            </div>
+                        </div>
+                    </span>
                 </div>
             </div>
             <div id="dsc-widget-join-link-container">
