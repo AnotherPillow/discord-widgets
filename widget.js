@@ -4,8 +4,12 @@
         .dsc-widget-circle {
             width: 0.7em;
             height: 0.7em;
-            margin: 0.3em;
             border-radius: 50%;
+            
+            margin-top: 0.1em;
+            margin-right: 0.2em;
+            
+            display: inline-block
         }
         .dsc-widget-circle.dsc-widget-circle-online {
             background-color: #23A559;
@@ -142,7 +146,7 @@
                     <h3 id="dsc-widget-server-name">Loading...</h3>
                     <span id="dsc-widget-server-members">
                         <div id="dsc-widget-member-counts-outer-parent">
-                            <div id="dsc-widget-online-members" class="member-count">
+                            <div id="dsc-widget-online-members" class="dsc-widget-member-count">
                                 <span class="dsc-widget-circle dsc-widget-circle-online">&nbsp;</span>
                                 <span id="dsc-widget-online-members-text" />
                             </div>
