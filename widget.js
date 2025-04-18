@@ -170,13 +170,14 @@
         </div>
     </div> 
     `
-
-    document.addEventListener('DOMContentLoaded', () => {
+    const addStyles = () => {
         const style = document.createElement('style')
         style.id = 'discord-widget-styling'
         style.innerHTML = css
         document.head.appendChild(style)
-    })
+    }
+    if (document.readyState == 'loading') document.addEventListener('DOMContentLoaded', addStyles)
+    else addStyles()
     /**
      * 
      * @param {number | string} str 
